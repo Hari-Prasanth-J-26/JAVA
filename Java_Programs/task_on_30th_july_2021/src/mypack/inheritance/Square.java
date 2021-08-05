@@ -1,6 +1,6 @@
 package mypack.inheritance;
 
-public class Square extends Area{
+public class Square {
 
 	public int area(int x) {
 		return x*x;
