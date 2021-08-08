@@ -18,6 +18,8 @@ public class ReadAndWrite {
 			while((byteRead = is.read(image)) != -1) {
 				os.write(image, 0, byteRead);
 			}
+			is.close();
+			os.close();
 		}catch(IOException ex){
 			ex.printStackTrace();
 		}

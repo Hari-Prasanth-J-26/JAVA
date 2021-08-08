@@ -1,6 +1,8 @@
 package mypack.stream;
 
-public class Bus implements Comparable<Bus> {
+import java.io.Serializable;
+
+public class Bus implements Comparable<Bus>, Serializable {
 
 	private int id;
 	private String providerName;
