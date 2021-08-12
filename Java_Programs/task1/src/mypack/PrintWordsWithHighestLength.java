@@ -1,8 +1,8 @@
 package mypack;
 
-public class Main {
-	
-	public static String printHighestWord(String input) {
+public class PrintWordsWithHighestLength {
+
+public static String printHighestWord(String input) {
 		
 		StringBuilder sb = new StringBuilder();
 		String[] str = input.split(" ");
