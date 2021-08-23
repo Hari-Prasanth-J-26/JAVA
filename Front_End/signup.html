@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp</title>
+    </head>
+    <body>
+        <h3>Fill this form to SignUp</h3>
+        <form method="post" action="https://www.w3schools.com/action_page.php">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+            <br><br>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Enter email">
+            <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <br><br>
+
+            <label for="teams">Select Team</label>
+            <select id="teams" name="teams">
+                <option>-- Select a Team --</option>
+                <option>Mumbai Indians</option>
+                <option>Chennai Super Kings</option>
+                <option>Royal Challengers Bengalore</option>
+            </select>
+            <br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label>
+            <br><br>
+
+            <label>Hobbies</label><br>
+            <input type="checkbox" id="reading" name="reading"><label for="reading">Reading Books</label>
+            <input type="checkbox" id="movies" name="movies"><label for="movies">Watching Movies</label>
+            <input type="checkbox" id="singing" name="singing"><label for="singing">Singing</label>
+            <br><br>
+           
+
+            <label for="about">About Me</label><br>
+            <textarea id="about" name="about">Description about me</textarea>
+            <br><br>
+
+            <input type="submit" value="SignUp">
+        </form>
+    </body>
+</html>
