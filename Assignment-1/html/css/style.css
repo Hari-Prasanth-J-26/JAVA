@@ -1,0 +1,27 @@
+.container{
+    background-color: rgb(52, 241, 200);
+    width: fit-content;
+    height: fit-content;
+    top: 25;
+    left: 26%;
+    position: absolute;
+    text-align: center;
+    border-radius: 10%;
+    border-color: blue;
+    padding: 3%;
+}
+
+#h1{
+    text-align: center;
+}
+
+#submit{
+    color: rgb(239, 236, 243);
+    padding: 5px;
+    background-color: rgb(233, 31, 31);
+}
+
+#label{
+    font-size: large;
+    font-weight: 100;
+}

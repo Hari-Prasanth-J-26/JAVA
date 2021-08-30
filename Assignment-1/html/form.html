@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <h1 id="h1">Student Registration</h1>
+    <form class="container" method="post" action="form.html">
+        <div id="label">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+            <br><br>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+            <br><br>
+
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="M" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" value="F" id="female"><label for="female">Female</label>
+            <br><br>
+
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Enter email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.9.-]+\.[a-z]{2,}$">
+            <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <br><br>
+
+            <label for="year">Select Your Academic Year</label>
+            <select id="year" name="year">
+                <option>Select which year your studying</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+            <br><br>
+
+
+            <label for="stream">Stream</label><br>
+            <input type="radio" name="stream" value="IT" id="stream"><label for="stream">Information Technology</label>
+            <input type="radio" name="stream" value="CSE" id="stream"><label for="stream">Computer Science</label>
+            <input type="radio" name="stream" value="CIVIL" id="stream"><label for="stream">Civil</label>
+            <input type="radio" name="stream" value="MECHANICAL" id="stream"><label for="stream">Mechanical</label>
+            <input type="radio" name="stream" value="AUTOMOBILE" id="stream"><label for="stream">Automobile</label>
+            <br><br>
+
+
+            <input id="submit" type="submit" value="SUBMIT" onclick="validate()">
+        </div>
+    </form>
+</body>
+
+</html>
