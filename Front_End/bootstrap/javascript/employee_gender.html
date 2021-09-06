@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee - Gender</title>
+    </head>
+    <body>
+        <script>
+            
+
+            var emp1 = {
+                firstName: "Dinesh",
+                lastName: "Kumar",
+                salary: 5000,
+                gender:{
+                    code: "M",
+                    name: "Male"
+                } 
+            };
+            console.log(emp1.firstName);
+            console.log(emp1.gender.name);
+
+            var emp2 = {
+                firstName: "Keerthi",
+                lastName: "Suresh",
+                salary: 5000,
+                gender: {
+                    code: "F",
+                    name: "Female"
+                }
+            };
+            console.log(emp2.gender.name);
+
+            var employees = [emp1, emp2];
+            console.log(employees[1].lastName);
+
+            class Employee {
+                constructor(firstname, lastname, age, salary, contact) {
+                    this.firstname = firstname;
+                    this.lastname = lastname;
+                    this.age = age;
+                    this.salary = salary;
+                    this.contact = contact;
+                }
+
+                display() {
+                    console.log(this.firstname + " , " + this.lastname+" , "+this.age+" , "+this.salary+" , "+this.contact);
+                }
+            }
+            var employee = new Employee('Hari Prasanth', 'Jagadeshan', 22, 50000, 8875648562);
+            employee.display();
+
+            class Gender {
+                constructor(code, name) {
+                    this.code = code;
+                    this.name = name;
+                }
+
+                display() {
+                    console.log(this.code + " : " + this.name);
+                }
+            }
+            var gender = new Gender('M', 'Male');
+            gender.display();
+
+        </script>
+    </body>
+</html>
